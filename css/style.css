@@ -1,0 +1,174 @@
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+  background: #eef4fc;
+  color: #333;
+}
+
+.main-header {
+  background-color: #89a8b2;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+}
+
+.section-description {
+  flex: 1;
+}
+
+.section-description h1 {
+  font-size: 36px;
+  color: #000;
+}
+
+.section-description p {
+  font-size: 16px;
+  color: #555;
+}
+
+.calculator {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h2 {
+  margin-bottom: 20px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.input-container {
+  display: flex;
+  border: 1px solid #d6e9f5;
+  border-radius: 5px;
+  background-color: #f1f0e8;
+  width: 100%;
+}
+
+.input-container .icon {
+  background-color: #e5e1da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 40px;
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background-color: #89a8b2;
+  color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b3c8cf;
+}
+
+.reset {
+  background-color: white;
+  color: black;
+  border: 1px solid #89a8b2;
+}
+
+.reset:hover {
+  background-color: #b3c8cf;
+}
+
+footer {
+  text-align: center;
+}
+
+.form-button {
+  margin-top: 16px;
+}
+
+/* Style untuk Hasil */
+.hidden {
+  display: none;
+}
+
+#bmi-result {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#bmi-result .result-card {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+#bmi-result h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#bmi-result .bmi-value {
+  font-size: 36px;
+  color: #89a8b2;
+  margin: 10px 0;
+}
+
+#bmi-result .description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#bmi-result .download-result {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#bmi-result .download-result:hover {
+  background-color: #0056b3;
+}
