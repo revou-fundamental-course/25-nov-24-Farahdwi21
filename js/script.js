@@ -1,7 +1,7 @@
 document.querySelector(".hitung").addEventListener("click", function (event) {
   event.preventDefault(); // Mencegah form submit
 
-  // Ambil input dari pengguna (Jawaban dari form)
+  // Mengambil input dari pengguna (Jawaban dari form)
   const weight = parseFloat(document.getElementById("weight").value);
   const height = parseFloat(document.getElementById("height").value);
   const age = parseInt(document.getElementById("age").value);
@@ -72,11 +72,6 @@ document.querySelector(".hitung").addEventListener("click", function (event) {
   );
   descricptionResultElement.innerHTML = descricptionResult;
   descricptionResultElement.classList.remove("hidden");
-
-  // // Menampilkan risiko kesehatan
-  // const riskSection = document.getElementById("health-risks");
-  // riskSection.classList.remove("hidden");
-  // riskSection.innerHTML = healthRisks;
 
   // Menampilkan atau menyembunyikan risiko kesehatan
   const riskSection = document.getElementById("health-risks");

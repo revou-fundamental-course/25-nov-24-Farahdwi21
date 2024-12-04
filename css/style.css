@@ -4,28 +4,40 @@ body {
   background: #eef4fc;
 }
 
-.main-header {
-  text-align: center;
+/* Style untuk navbar */
+.navbar {
+  display: flex;
+  align-items: center;
   background-color: #89a8b2;
-  padding: 40px 20px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.main-header h1 {
-  margin: 0;
+.navbar-item {
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
-.main-header .p-header {
-  margin: 0;
-  font-size: 16px;
+nav .icon {
+  font-size: 24px; /* Ukuran ikon */
+  margin-right: 10px;
 }
 
+.navbar-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style Container */
 .container {
-  margin: 50px auto;
+  margin: 20px auto;
   display: flex;
   gap: 50px;
   padding: 20px;
 }
 
+/* Srtle untuk bagian Deskripsi Kalkulator BMI */
 .section-description {
   flex: 1;
 }
@@ -35,14 +47,20 @@ body {
   color: #000;
 }
 
+header h4 {
+  margin-bottom: 5px;
+}
 ol {
   font-size: 14px;
+  margin-top: 5px;
+  padding-left: 20px;
 }
 
 p {
   font-size: 14px;
 }
 
+/* Style untuk form kalkulator BMI */
 .calculator {
   flex: 1;
   background: #fff;
@@ -100,6 +118,7 @@ p {
   background-color: transparent;
 }
 
+/* Style Button */
 button {
   padding: 12px;
   border: none;
@@ -122,10 +141,6 @@ button:hover {
 
 .reset:hover {
   background-color: #b3c8cf;
-}
-
-footer {
-  text-align: center;
 }
 
 .form-button {
@@ -182,15 +197,6 @@ footer {
   border: 1px solid #e5e1da;
 }
 
-footer {
-  background-color: #89a8b2;
-  color: black;
-  text-align: center;
-  padding: 4px;
-  font-weight: bold;
-  font-size: 12px;
-}
-
 .description-diagnosis {
   text-align: justify;
 }
@@ -204,7 +210,16 @@ footer {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
+/* Style untuk Footer */
+footer {
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Agar Responsif */
+@media only screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     align-items: center;
