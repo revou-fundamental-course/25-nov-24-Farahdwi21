@@ -2,18 +2,24 @@ body {
   font-family: "Poppins", serif;
   margin: 0;
   background: #eef4fc;
-  color: #333;
 }
 
 .main-header {
-  background-color: #89a8b2;
-  color: black;
   text-align: center;
-  padding: 10px;
+  background-color: #89a8b2;
+  padding: 40px 20px;
+}
+
+.main-header h1 {
+  margin: 0;
+}
+
+.main-header .p-header {
+  margin: 0;
+  font-size: 16px;
 }
 
 .container {
-  max-width: 1200px;
   margin: 50px auto;
   display: flex;
   gap: 50px;
@@ -29,9 +35,12 @@ body {
   color: #000;
 }
 
-.section-description p {
-  font-size: 16px;
-  color: #555;
+ol {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
 }
 
 .calculator {
@@ -96,9 +105,9 @@ button {
   border: none;
   background-color: #89a8b2;
   color: black;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
 button:hover {
@@ -137,9 +146,11 @@ footer {
 
 #bmi-result .result-card {
   padding: 20px;
-  background: white;
-  border-radius: 10px;
+  background-color: #b3c8cf;
+  border-radius: 5px;
   border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
 
 #bmi-result h3 {
@@ -150,25 +161,57 @@ footer {
 
 #bmi-result .bmi-value {
   font-size: 36px;
-  color: #89a8b2;
+  color: black;
   margin: 10px 0;
+  font-weight: bold;
 }
 
-#bmi-result .description {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 20px;
+#description-result {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
 }
 
-#bmi-result .download-result {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+#bmi-result button {
+  background-color: #e5e1da;
+}
+
+#bmi-result button:hover {
+  background-color: white;
+  border: 1px solid #e5e1da;
+}
+
+footer {
+  background-color: #89a8b2;
+  color: black;
+  text-align: center;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.description-diagnosis {
+  text-align: justify;
+}
+
+#health-risks {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  cursor: pointer;
+  background-color: #b3c8cf;
+  font-size: 14px;
 }
 
-#bmi-result .download-result:hover {
-  background-color: #0056b3;
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .section-description {
+    text-align: justify;
+  }
 }

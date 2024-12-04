@@ -26,7 +26,9 @@
   <body>
     <header class="main-header">
       <h1>Kalkulator Body Mass Index (BMI)</h1>
-      <p>Hitung BMI Anda untuk mengetahui kategori berat badan Anda.</p>
+      <p class="p-header">
+        Hitung BMI Anda untuk mengetahui kategori berat badan Anda.
+      </p>
     </header>
 
     <!-- Konten Website -->
@@ -56,21 +58,20 @@
             </ol>
 
             <p>
-              Kalkulator akan memberi Anda gambaran tentang perbandingan berat
-              badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI)
-              dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
-              kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup
-                >2</sup
-              >
+              Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita
+              hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)
+              dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+              selain berkonsultasi dengan orang yang memenuhi syarat seperti
+              dokter.
             </p>
 
-            <!-- <p>
+            <p>
               Kalkulator akan memberi Anda gambaran tentang perbandingan berat
               badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI)
               dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
               kuadrat tinggi badan Anda (dalam meter) atau BMI =
               Kg/M<sup>2</sup>.
-            </p> -->
+            </p>
           </article>
         </section>
 
@@ -132,22 +133,42 @@
         </section>
       </div>
 
-      <!-- Hasil -->
+      <!-- Hasil BMI -->
       <section id="bmi-result" class="hidden">
         <h3>Hasil</h3>
         <div class="result-card">
           <p class="category">Kategori BMI:</p>
           <p class="bmi-value">0.0</p>
           <p class="description">Deskripsi hasil Anda akan muncul di sini.</p>
-          <button class="download-result">Download Hasil BMI</button>
+          <button>Download Hasil BMI</button>
+        </div>
+        <!-- Deskripsi Berdasarkan Hasil BMI -->
+        <p id="description-result" class="hidden">
+          Tambahan Info Muncul disini
+        </p>
+        <div>
+          <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+          <button>Registrasi Online Ahli Gizi</button>
+        </div>
+        <p class="description-diagnosis">
+          BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
+          tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih
+          lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat
+          badan Anda.
+        </p>
+        <!--Resiko Kesehatan Untuk Kategori Obesitas dan Kekurangan Berat Badan -->
+        <div id="health-risks" class="hidden">
+          <h2>Risiko Kesehatan</h2>
+          <p></p>
         </div>
       </section>
     </main>
 
-    <!-- Footer Website -->
+    <!-- Footer Website
     <footer>
       <p>Website Kalkulator BMI Made by Farah 2024</p>
-    </footer>
+    </footer> -->
+    <!-- Java Script -->
     <script src="js/script.js"></script>
   </body>
 </html>
