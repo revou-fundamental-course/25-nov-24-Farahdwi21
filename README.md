@@ -3,5 +3,6 @@ This project was created for the needs of the Mini Coding Project assignment fro
 
 ### Features
 1. Form Input BMI
-2. Display BMI Result 
-3. Explanation the BMI Form & Result
+2. Calculates BMI based on body weight and height.
+3. Determines weight category (e.g. Underweight, Normal, Overweight, Obese).
+4. Provides additional information about BMI and health risks.
