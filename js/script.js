@@ -29,10 +29,10 @@ document.querySelector(".hitung").addEventListener("click", function (event) {
       "Hasil BMI < 18.5.<br>Anda berada dalam kategori kekurangan berat badan.<br>Hubungi dokter lebih lanjut mengenai pola makan dan gizi yang baik untuk meningkatkan kesehatan.";
     healthRisks =
       "<strong>Beberapa penyakit yang muncul dari kekurangan berat badan</strong><br>" +
-      "- Mengalami kekurangan nutrisi<br>" +
-      "- Membuat tubuh lebih rentan sakit<br>" +
-      "- Meningkatkan risiko osteoporosis<br>" +
-      "- Mengganggu siklus menstruasi";
+      "Mengalami kekurangan nutrisi<br>" +
+      "Membuat tubuh lebih rentan sakit<br>" +
+      "Meningkatkan risiko osteoporosis<br>" +
+      "Mengganggu siklus menstruasi";
   } else if (bmi >= 18.5 && bmi < 24.9) {
     category = "Berat Badan Normal";
     description = "Anda memiliki berat badan normal.\nGood Job!";
@@ -52,10 +52,10 @@ document.querySelector(".hitung").addEventListener("click", function (event) {
       "Hasil BMI lebih dari 25.<br>Anda berada dalam kategori obesitas.<br>Usahakan untuk menurunkan berat badan dan menerapkan pola hidup sehat dengan menjaga makan dan aktivitas fisik.";
     healthRisks =
       "<strong>Beberapa penyakit yang muncul dari kegemukan:</strong><br>" +
-      "- Serangan jantung<br>" +
-      "- Kencing manis<br>" +
-      "- Demensia<br>" +
-      "- Sindrom ovarian polikistik<br>";
+      "Serangan jantung<br>" +
+      "Kencing manis<br>" +
+      "Demensia<br>" +
+      "Sindrom ovarian polikistik<br>";
   }
 
   // Menampilkan hasil
